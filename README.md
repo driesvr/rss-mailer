@@ -1,5 +1,7 @@
-#rss-mailer 
-This tiny python script sends a daily email digest of recent scientific articles. 
+#rss-mailer
+This tiny python script sends a daily email digest of recent scientific articles.
+
+##usage
 Settings should be provided in a separate input file, with the following variables:
 
 -sender *adress you want to use to send the mail*
