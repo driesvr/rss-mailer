@@ -34,7 +34,7 @@ for feed in settings.list_of_my_journals:
 
 #initializes a mail payload
 if not new_articles:
-    payload = "Sorry! No interesting articles were published in the past 24h.\n"
+    payload = "Sorry! No interesting articles were published in the past {} hours.\n".format(settings.max_article_age)
 else:
     payload = "Interesting articles:\n\n"
 
