@@ -1,5 +1,5 @@
 sender = 'sender@emailadress.com'
-receiver = 'receiver@emailadress.com'
+recipient = 'recipient@emailadress.com'
 password = 'sender_password'
 hostname = 'smtp.emailadress.com'
 max_article_age = 24

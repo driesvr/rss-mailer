@@ -47,10 +47,10 @@ for article in new_articles:
 msg = MIMEText(payload,'plain',"utf-8")
 msg["Subject"] = ("Your articles for {}".format(current_date))
 msg["From"] = settings.sender
-msg["To"] = settings.receiver
+msg["To"] = settings.recipient
 
 #send the mail
 session = smtplib.SMTP_SSL(settings.hostname)
 session.login(settings.sender, settings.password)
-session.sendmail(settings.sender, [settings.receiver], msg.as_string())
+session.sendmail(settings.sender, [settings.recipient], msg.as_string())
 session.quit()
